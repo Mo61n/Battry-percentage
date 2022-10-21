@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  top: 150px;
+  left: 35%;
+}
+
+h1 {
+  color: blue;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.battry {
+  font-size: 2rem;
+  padding: 6px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    rgb(81, 115, 209) 50%,
+    rgb(255, 81, 0) 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  color: black;
+}
+
+.content:hover {
+  translate: 0px -10px;
+  transition: 0.5s;
+  color: red;
+}
+
+main {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
